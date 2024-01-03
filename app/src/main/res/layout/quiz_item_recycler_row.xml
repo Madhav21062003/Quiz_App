@@ -30,6 +30,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/quiz_subtitle_text"
                 android:layout_marginTop="4dp"
+                android:visibility="visible"
+                android:textColor="@color/black"
                 tools:text="All about Android OS"/>
         </LinearLayout>
         <LinearLayout

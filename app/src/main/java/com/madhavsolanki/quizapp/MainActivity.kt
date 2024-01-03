@@ -2,16 +2,15 @@ package com.madhavsolanki.quizapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.database.FirebaseDatabase
 import com.madhavsolanki.quizapp.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
-
-    // Here we create a list of quiz Model
+    lateinit var binding: ActivityMainBinding
     lateinit var quizModelList : MutableList<QuizModel>
-
     lateinit var adapter: QuizListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,29 +18,36 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        quizModelList = mutableListOf();
+        quizModelList = mutableListOf()
         getDataFromFirebase()
+
 
     }
 
     private fun setupRecyclerView(){
+        binding.progressBar.visibility = View.GONE
         adapter = QuizListAdapter(quizModelList)
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
     }
 
     private fun getDataFromFirebase(){
-        // Dummy data
-        val listQuestionModel = mutableListOf<QuestionModel>()
-        listQuestionModel.add(QuestionModel("What is android", mutableListOf("Language", "OS", "Product", "None"), "os"))
-        listQuestionModel.add(QuestionModel("What owns android", mutableListOf("Apple", "Samsung", "Google", "Microsoft"), "Google"))
-        listQuestionModel.add(QuestionModel("which assistant  android uses", mutableListOf("Kindle", "ECHO", "Siri", "Google Assistant"), "Google Assistant"))
+        binding.progressBar.visibility = View.VISIBLE
+        FirebaseDatabase.getInstance().reference
+            .get()
+            .addOnSuccessListener { dataSnapshot->
+                if(dataSnapshot.exists()){
+                    for (snapshot in dataSnapshot.children){
+                        val quizModel = snapshot.getValue(QuizModel::class.java)
+                        if (quizModel != null) {
+                            quizModelList.add(quizModel)
+                        }
+                    }
+                }
+                setupRecyclerView()
+            }
 
-        quizModelList.add(QuizModel("1","Programming","All basic programming Questions","20:00",listQuestionModel))
-        quizModelList.add(QuizModel("2","Physics","All basic Physics Questions","20:00",listQuestionModel))
-        quizModelList.add(QuizModel("3","Chemistry","All basic Chemistry Questions","20:00 ",listQuestionModel))
 
-        setupRecyclerView()
     }
 }
 
