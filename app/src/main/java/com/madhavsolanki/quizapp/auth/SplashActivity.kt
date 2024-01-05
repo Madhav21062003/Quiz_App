@@ -1,4 +1,4 @@
-package com.madhavsolanki.quizapp
+package com.madhavsolanki.quizapp.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 
 import com.google.firebase.auth.FirebaseAuth
+import com.madhavsolanki.quizapp.MainActivity
 import com.madhavsolanki.quizapp.databinding.ActivitySplashBinding
 
 
