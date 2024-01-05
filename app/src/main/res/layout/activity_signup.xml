@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignupActivity">
 
     <ImageView
         android:id="@+id/appLogo"
@@ -17,21 +16,37 @@
         android:src="@drawable/logo" />
 
     <TextView
-        android:id="@+id/tvLogin"
+        android:id="@+id/tvSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Signup"
+        android:textStyle="bold"
         android:textColor="@color/orange"
+        android:textSize="30sp"
         android:layout_below="@id/appLogo"
         android:layout_marginStart="20dp"
-        android:textStyle="bold"
-        android:textSize="35sp"/>
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etSignupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSignup"
+        android:background="@drawable/rounded_corner"
+        android:padding="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/gray"
+        android:hint="Enter UserName"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"/>
+
 
     <EditText
         android:id="@+id/etSignupEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLogin"
+        android:layout_below="@+id/etSignupName"
         android:background="@drawable/rounded_corner"
         android:padding="15dp"
         android:layout_marginStart="8dp"
@@ -55,23 +70,12 @@
         android:inputType="textPassword"
         android:layout_marginTop="15dp"/>
 
-    <TextView
-        android:id="@+id/tvForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Forgot Password"
-        android:textColor="@color/orange"
-        android:textStyle="bold"
-        android:layout_below="@+id/etLoginPassword"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="15dp"/>
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvForgotPassword"
+        android:layout_below="@id/etLoginPassword"
         android:layout_marginTop="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
@@ -94,4 +98,6 @@
         android:elevation="10dp"
         android:shadowDy="11"
         android:shadowRadius="12"/>
+
+
 </RelativeLayout>
