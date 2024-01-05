@@ -1,0 +1,177 @@
+[
+  {
+    "id": "1",
+    "title": "Android",
+    "subtitle": "History and Usages",
+    "time": "10",
+    "questionList": [
+      {
+        "question": "Who owns Android?",
+        "options": ["Apple", "Google", "Samsung", "Microsoft"],
+        "correct": "Google"
+      },
+      {
+        "question": "Who is the AI Assistant in Android?",
+        "options": ["Siri", "Cortana", "Google Assistant", "Alexa"],
+        "correct": "Google Assistant"
+      },
+      {
+        "question": "Which company developed the Android operating system?",
+        "options": ["Apple", "Google", "Samsung", "Microsoft"],
+        "correct": "Google"
+      },
+      {
+        "question": "In which year was the first Android phone released?",
+        "options": ["2005", "2007", "2009", "2010"],
+        "correct": "2008"
+      },
+      {
+        "question": "What is the latest version of Android as of 2022?",
+        "options": ["Android 9", "Android 10", "Android 11", "Android 12"],
+        "correct": "Android 12"
+      },
+      {
+        "question": "Which programming language is primarily used for Android app development?",
+        "options": ["Java", "Python", "Swift", "C++"],
+        "correct": "Java"
+      }
+     
+    ]
+  },
+  {
+    "id": "2",
+    "title": "World Capitals",
+    "subtitle": "Capitals and Countries",
+    "time": "8",
+    "questionList": [
+       {
+        "question": "What is the capital of France?",
+        "options": ["Berlin", "Madrid", "Rome", "Paris"],
+        "correct": "Paris"
+      },
+      {
+        "question": "Which city is the capital of Japan?",
+        "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+        "correct": "Tokyo"
+      },
+      {
+        "question": "In which continent is Brazil located?",
+        "options": ["North America", "South America", "Europe", "Asia"],
+        "correct": "South America"
+      },
+      {
+        "question": "What is the currency of Australia?",
+        "options": ["Dollar", "Euro", "Yen", "Pound"],
+        "correct": "Dollar"
+      },
+      {
+        "question": "Which river is the longest in the world?",
+        "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+        "correct": "Nile"
+      }
+     
+    ]
+  },
+  {
+    "id": "3",
+    "title": "General Knowledge",
+    "subtitle": "Random Facts",
+    "time": "12",
+    "questionList": [
+      {
+        "question": "What is the largest mammal on Earth?",
+        "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+        "correct": "Blue Whale"
+      },
+      {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+        "correct": "Mars"
+      },
+      {
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "options": ["J.K. Rowling", "Harper Lee", "George Orwell", "Ernest Hemingway"],
+        "correct": "Harper Lee"
+      },
+      {
+        "question": "In which year did the Titanic sink?",
+        "options": ["1912", "1920", "1931", "1945"],
+        "correct": "1912"
+      },
+      {
+        "question": "What is the capital of Canada?",
+        "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+        "correct": "Ottawa"
+      }
+   
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Programming Languages",
+    "subtitle": "Languages and Syntax",
+    "time": "15",
+    "questionList": [
+     {
+        "question": "Which programming language uses curly braces {} for code blocks?",
+        "options": ["Python", "Java", "C++", "Ruby"],
+        "correct": "Java"
+      },
+      {
+        "question": "What does HTML stand for?",
+        "options": ["Hypertext Markup Language", "Hyperlink and Text Markup Language", "High-Level Text Markup Language", "Home Tool Markup Language"],
+        "correct": "Hypertext Markup Language"
+      },
+      {
+        "question": "Which of the following is an object-oriented programming language?",
+        "options": ["C", "Java", "Assembly", "Fortran"],
+        "correct": "Java"
+      },
+      {
+        "question": "What is the purpose of CSS in web development?",
+        "options": ["Database management", "Styling web pages", "Server-side scripting", "Machine learning"],
+        "correct": "Styling web pages"
+      },
+      {
+        "question": "Which company developed the JavaScript programming language?",
+        "options": ["Microsoft", "Google", "Netscape", "IBM"],
+        "correct": "Netscape"
+      }
+    
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Movies",
+    "subtitle": "Genres and Directors",
+    "time": "10",
+    "questionList": [
+      {
+        "question": "Who directed the movie 'Inception'?",
+        "options": ["Christopher Nolan", "Quentin Tarantino", "Martin Scorsese", "Steven Spielberg"],
+        "correct": "Christopher Nolan"
+      },
+      {
+        "question": "Which actor played the character Tony Stark in the Marvel Cinematic Universe?",
+        "options": ["Chris Hemsworth", "Robert Downey Jr.", "Chris Evans", "Mark Ruffalo"],
+        "correct": "Robert Downey Jr."
+      },
+      {
+        "question": "In the film 'The Godfather', who is known as the 'Godfather'?",
+        "options": ["Michael Corleone", "Vito Corleone", "Sonny Corleone", "Fredo Corleone"],
+        "correct": "Vito Corleone"
+      },
+      {
+        "question": "Which animated film features a character named Simba?",
+        "options": ["Toy Story", "Finding Nemo", "The Lion King", "Shrek"],
+        "correct": "The Lion King"
+      },
+      {
+        "question": "Who won the Academy Award for Best Director for the film 'La La Land'?",
+        "options": ["Christopher Nolan", "Damien Chazelle", "Quentin Tarantino", "Martin Scorsese"],
+        "correct": "Damien Chazelle"
+      }
+    
+    ]
+  }
+]
