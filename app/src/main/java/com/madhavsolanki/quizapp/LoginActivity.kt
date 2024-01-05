@@ -1,5 +1,6 @@
 package com.madhavsolanki.quizapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.madhavsolanki.quizapp.databinding.ActivityLoginBinding
@@ -11,6 +12,10 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnSignup.setOnClickListener {
+            startActivity(Intent(this@LoginActivity, SignupActivity::class.java))
+        }
 
 
     }
